@@ -1,0 +1,80 @@
+/* This CSS is common to all pages */
+
+/* import inter font */
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+#page-view {
+  height: 100vh;
+}
+
+.navitem {
+  padding: 3px 10px;
+}
+.navitem.is-active {
+  background-color: #eee;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .fade-in {
+    opacity: 1;
+    transition: opacity 1.5s ease;
+  }
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+  .slide {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+  
+  fade-up {
+    opacity: 0;
+    transform: translated3d(0, 5rem, 0);
+    transition: transform 1s cubic-bezier(0.64, 0.04, 0.26 0.87), opacity 0.8s cubic-bezier(0.64, 0.04, 0.26, 0.87);
+  }
+  fade-up.faded {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+/* @font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url('/fonts/Inter-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url('/fonts/Inter-Semibold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url('/fonts/Inter-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url('/fonts/Poppins-SemiBold.ttf') format('ttf');
+} */
