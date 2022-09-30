@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Accordion from './Accordion';
 import {getFaqContent} from '../../contentful';
-import Entry from 'contentful';
 
 export interface FAQInput {
     question: string;
@@ -11,29 +10,6 @@ export interface FAQInputs {
     data: FAQInput[];
 }
 
-const data:FAQInput[] = [
-    {
-        question: 'What is a MicroCourse?',
-        answer: 'MicroCourses are a single lesson content type that allow you to create engaging, hyper-relevant content for your learners. They are quicker to develop, but have all of the same robust features as a regular course.'
-    },
-    {
-        question: 'How do you use smart widgets in layouts and pages?',
-        answer: 'MicroCourses are a single lesson content type that allow you to create engaging, hyper-relevant content for your learners. They are quicker to develop, but have all of the same robust features as a regular course.'
-    },
-    {
-        question: 'How can I create your own dashboard in Reporting Hub?',
-        answer: 'MicroCourses are a single lesson content type that allow you to create engaging, hyper-relevant content for your learners. They are quicker to develop, but have all of the same robust features as a regular course.'
-    },
-    {
-        question: 'What is a Panorama and how do I configure one?',
-        answer: 'MicroCourses are a single lesson content type that allow you to create engaging, hyper-relevant content for your learners. They are quicker to develop, but have all of the same robust features as a regular course.'
-    },
-    {
-        question: 'How many Panoramas can I create for my organization?',
-        answer: 'MicroCourses are a single lesson content type that allow you to create engaging, hyper-relevant content for your learners. They are quicker to develop, but have all of the same robust features as a regular course.'
-    },
-    
-]
 const FAQ = () => {
 
     const [data, setData] = useState<FAQInput[]>([]);

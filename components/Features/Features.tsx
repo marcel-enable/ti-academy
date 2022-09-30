@@ -1,12 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
-import featureImage1 from '../../renderer/featureImage1.svg';
-import featureImage2 from '../../renderer/featureImage2.svg';
-import featureImage3 from '../../renderer/featureImage3.svg';
 import learn from '../../renderer/learn.svg';
 import attend from '../../renderer/attend.svg';
 import stayUpdated from '../../renderer/stayUpdated.svg';
 import {getAllFeatures} from '../../contentful';
-import { Slide } from "react-awesome-reveal";
 import { useInView } from 'react-intersection-observer';
 
 interface FeaturesInput {

@@ -1,50 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
-import { FeatureInput } from './FeaturedContent';
 import caretLeft from "../../renderer/caretLeft.svg";
 import caretRight from "../../renderer/caretRight.svg";
-const data:  FeatureInput[] = [
-    {
-        title:'Comprehensive Learning path: Administrator',
-        imageUrl:'../../renderer/featuredContent1.svg',
-        ribbonCopy: 'New Course'
-    },
-    {
-        title:'How Greate CL Programs Create Value',
-        imageUrl:'../../renderer/featuredContent2.svg',
-        
-    },
-    {
-        title:'Best Practices Library',
-        imageUrl:'../../renderer/featuredContent3.svg',
-        
-    },
-    {
-        title:'Customer Education: Certificate Program: Strategy',
-        imageUrl:'../../renderer/featuredContent4.svg',
-        
-    },
-    {
-        title:'Getting Started as a Site Designer',
-        imageUrl:'../../renderer/featuredContent5.svg',
-        ribbonCopy: 'New Course'
-    },
-    {
-        title:'Best Practices Library',
-        imageUrl:'../../renderer/featuredContent6.svg',
-        
-    },
-    {
-        title:'Customer Education: Certificate Program: Strategy',
-        imageUrl:'../../renderer/featuredContent7.svg',
-        
-    },
-    {
-        title:'Best Practices Library',
-        imageUrl:'../../renderer/featuredContent8.svg',
-        ribbonCopy: ''
-    },
 
-]
 
 const Carousel = () => {
     const maxScrollWidth = useRef(0);

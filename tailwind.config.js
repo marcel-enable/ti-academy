@@ -7,7 +7,6 @@ function getInstanceSetting(settingName, defaultSetting) {
   if (!Object.keys(instanceSettings).length) {
     const { instances = [] } = tiConfig;
     let instance = instances[0];
-
     if (INSTANCE_NAME) {
       const possibleMatch = instances.find(instance => instance.nickname === INSTANCE_NAME);
       if (possibleMatch && possibleMatch.apiKey) {

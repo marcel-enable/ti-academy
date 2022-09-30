@@ -1,6 +1,5 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { BannerInput} from './AnnouncementBanner'
-import arrowRight from '../../renderer/arrowRight.svg';
 
 const COLORS = ['#D8417A', '#56A0B5', '#90759B', '#989625'];
 

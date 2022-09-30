@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider, {SliderItem} from './Slider';
-import Carousel from './Carousel';
 import FeaturedContentBackground from '../../renderer/featuredContentBackground.svg';
 import { gql, useQuery } from '@apollo/client';
 import { useInView } from 'react-intersection-observer';

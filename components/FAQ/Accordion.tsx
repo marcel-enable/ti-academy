@@ -1,7 +1,5 @@
 import React,  {useState } from 'react';
 import { FAQInputs } from './FAQ';
-import caretDown from "../../renderer/caretDown.svg";
-import caretUp from "../../renderer/caretUp.svg";
 
 const Accordion = ({data}:FAQInputs) => {
     const [selected, setSelected]  = useState<number | null>(null);
