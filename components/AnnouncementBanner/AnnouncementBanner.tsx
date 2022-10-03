@@ -50,7 +50,6 @@ const AnnouncementBanner = () => {
 
     useEffect(() => {
         getBottomHeroContent().then(items => {
-            console.log('bottomHeroContent', items)
             setData(items)
         })
     }, [])

@@ -33,7 +33,6 @@ const Footer = () => {
 
   useEffect(() => {
     getFooterDetails().then(response => {
-      console.log(response);
       setFooterDetails(response);
     })
   

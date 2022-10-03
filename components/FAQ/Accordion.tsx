@@ -21,7 +21,7 @@ const Accordion = ({data}:FAQInputs) => {
 
                             <button className={`transition-all ${selected === idx ? 'rotate-180': 'rotate-0'} caret-up flex items-center p-3 bg-light-constant rounded-full shadow-md text-brand-accent`}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 15L12 7.5L19.5 15" stroke="#EA2B7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin ="round"/>
+                                    <path d="M4.5 15L12 7.5L19.5 15" stroke="#EA2B7B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin ="round"/>
                                 </svg>
                             </button>
                         </div>

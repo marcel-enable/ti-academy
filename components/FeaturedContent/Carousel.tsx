@@ -73,7 +73,7 @@ const Carousel = () => {
               >
                 <path
                   strokeLinecap="round"
-                  stroke-linejoin ="round"
+                  strokeLinejoin ="round"
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
@@ -94,7 +94,7 @@ const Carousel = () => {
               >
                 <path
                   strokeLinecap="round"
-                  stroke-linejoin ="round"
+                  strokeLinejoin ="round"
                   d="M9 5l7 7-7 7"
                 />
               </svg>
