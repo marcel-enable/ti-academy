@@ -28,7 +28,6 @@ const Features = () => {
 
     useEffect(() => {
         getAllFeatures().then(response => {
-            console.log(response)
             setData(response);
         })
     }, [])

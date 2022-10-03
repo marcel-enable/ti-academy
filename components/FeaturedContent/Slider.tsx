@@ -7,7 +7,7 @@ import caretRight from "../../renderer/caretRight.svg";
 
 const BOXES = ['../../renderer/boxes1.svg', '../../renderer/boxes2.svg', '../../renderer/boxes3.svg']
 
-export const SliderItem = (props:{data:ContentItem, index: number}) => {
+export const SliderItem = (props:{data:ContentItem, index: number, imageUrl: string}) => {
     const boxIdx = props.index%BOXES.length
     const boxUrl = BOXES[boxIdx];
     const boxStyle = `hidden md:block absolute ${boxIdx === 0 ? '-left-[44px] -bottom-[74px] rotate-180 lg:left-0 lg:-bottom-[20px] lg:-scale-x-100 lg:-scale-y-100' : boxIdx === 1 ?  '-right-[62px] -top-[60px] lg:-right-[25px] lg:-top-[8px]' : '-left-[42px] -top-[55px] lg:left-[px] lg:top-[0px]'}`;                  
@@ -24,7 +24,7 @@ export const SliderItem = (props:{data:ContentItem, index: number}) => {
                 <div className="title text-base font-semibold font-secondary text-center text-light-constant p-4 z-30 md:text-lg md:font-bold lg:text-2xl lg:font-semibold">{props.data.title}</div>
                 <img src={boxUrl} className={`${boxStyle} z-20`}/>
                 <div className="overlay absolute h-full w-full bg-black opacity-60 z-10"></div>
-                <img src={props.data.asset} className="image transition-all duration-300 group-hover:scale-150 absolute h-full w-full z-0 object-cover "/>
+                <img src={props.imageUrl} className="image transition-all duration-300 group-hover:scale-150 absolute h-full w-full z-0 object-cover "/>
                 
             </div>
         </div>

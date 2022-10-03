@@ -24,3 +24,7 @@ export const getFeatureStayUpdated = () => client.getEntry('QCwUMmYbfeMLeizI5Zfa
 export const getFeatureLearn = () => client.getEntry('zem1Wuqe2nIvb0BQmOboK').then(response => response.fields);
 
 export const getAllFeatures = () => client.getEntries({content_type: 'features'}).then(response => response.items.map(item => item.fields));
+
+export const getFeaturedContentImages = () => client.getEntries({content_type: 'featuredContentImages'}).then(response => {
+    return response.items[0].fields.image.map((image) => image.fields.file.url);
+});
