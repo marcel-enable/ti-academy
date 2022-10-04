@@ -8,5 +8,5 @@ node_modules
 .DS_Store
 dist
 *.local
-renderer/tailwind.css
+# renderer/tailwind.css
 ti-config.json
